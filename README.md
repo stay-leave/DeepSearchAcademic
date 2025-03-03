@@ -5,8 +5,7 @@
 
 多模态RAG的一些理论方法，分为两类，一种是解析式文档多模态RAG(将一个文档切分为页面，然后再用版式识别的方式对文档进行各种模态元素进行分割、解析、提取，然后再嵌入、检索）；另一种是DocVQA式文档多模态RAG(将文档切分为页面图像，不再细分，然后根据页面图像级别进行检索)。
 
-![RAG流程](https://github.com/user-attachments/assets/475954d0-e9fb-4ec3-8a58-8a2fa0093a40)
-
+![RAG流程](https://github.com/user-attachments/assets/92c832c7-cff6-4a61-b485-5f63e952a1f0)
 
 
 ## 起源
