@@ -13,6 +13,14 @@
 
 在博主看来，RAG是信息检索，LLM同样也是信息检索，只不过前者的知识在数据库，后者的知识在FFN上的区别。人类知识浩如烟海，能够高效查找和整合信息是核心。
 
+## 环境依赖
+
+```
+conda create --name myenv 
+conda activate myenv
+pip install -r requirements.txt
+```
+
 ## 领域
 在中文核心期刊，主要是南大、北大核心中有关舆情分析的论文。手动下载了PDF文件。
 
