@@ -1,7 +1,7 @@
 # DeepSearchAcademic
 基于舆情中文核心论文的deepsearch的个人项目
 
-博客[https://stay-leave.github.io/post/%E5%A4%9A%E6%A8%A1%E6%80%81rag%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%AE%9E%E8%B7%B5/]
+![博客](https://stay-leave.github.io/post/%E5%A4%9A%E6%A8%A1%E6%80%81rag%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%AE%9E%E8%B7%B5/)
 
 多模态RAG的一些理论方法，分为两类，一种是解析式文档多模态RAG(将一个文档切分为页面，然后再用版式识别的方式对文档进行各种模态元素进行分割、解析、提取，然后再嵌入、检索）；另一种是DocVQA式文档多模态RAG(将文档切分为页面图像，不再细分，然后根据页面图像级别进行检索)。
 
