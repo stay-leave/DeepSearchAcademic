@@ -22,7 +22,7 @@ def init_database(db_name="paper"):
     返回数据库服务端实例
     """
     # 连接数据库服务端，本地文件夹，必须是绝对路径
-    infinity_object = infinity.connect("/root/RAG/database", config_path="/root/RAG/infinity_config/infinity_conf.toml")
+    infinity_object = infinity.connect("/root/DeepSearchAcademic/database", config_path="/root/DeepSearchAcademic/infinity_config/infinity_conf.toml")
     # 删除数据库，如果有
     infinity_object.drop_database(db_name, conflict_type = ConflictType.Ignore)
     # 创建数据库
@@ -415,7 +415,7 @@ def input_data(file_path):
 # 测试用的查询
 def query():
     # 查询
-    infinity_object = infinity.connect("/root/RAG/database/test", config_path="/root/RAG/infinity_config/infinity_conf.toml")
+    infinity_object = infinity.connect("/root/DeepSearchAcademic/database/test", config_path="/root/DeepSearchAcademic/infinity_config/infinity_conf.toml")
     db_object = infinity_object.get_database("paper")
     table_paper = db_object.get_table("table_paper")
     print(table_paper.output(["*"]).to_pl())
@@ -445,7 +445,7 @@ if __name__ == "__main__":
     
     """
     # 连接数据库服务端，本地文件夹，必须是绝对路径
-    infinity_object = infinity.connect("/root/RAG/database/test", config_path="/root/RAG/infinity_config/infinity_conf.toml")
+    infinity_object = infinity.connect("/root/DeepSearchAcademic/database/test", config_path="/root/DeepSearchAcademic/infinity_config/infinity_conf.toml")
     # 选择数据库，选择数据表
     # 按名称索引到指定数据库
     db_object = infinity_object.get_database("lhd")
@@ -467,7 +467,7 @@ if __name__ == "__main__":
     model.eval()
 
     # 模块化后的运行命令
-    file_path = "RAG/middel_data/12.13.csv"
+    file_path = "DeepSearchAcademic/middel_data/12.13.csv"
     input_data(file_path)
     
     # query()
