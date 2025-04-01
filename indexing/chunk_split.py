@@ -340,7 +340,7 @@ def merge_separators(chunks, separators):
 # 处理单个论文为list的记录
 def process_paper(file_path):
     # 读取 markdown 文件
-    # file_path = "RAG/parsed_file/融合多特征和注意力机制的多模态情感分析模型_吕学强/ocr/融合多特征和注意力机制的多模态情感分析模型_吕学强.md"
+    # file_path = "DeepSearchAcademic/parsed_file/融合多特征和注意力机制的多模态情感分析模型_吕学强/ocr/融合多特征和注意力机制的多模态情感分析模型_吕学强.md"
     with open(file_path, 'r', encoding="utf-8") as file:
         content = file.read()
 
@@ -549,7 +549,7 @@ if __name__ == "__main__":
     
     
     # 所有论文的文件夹
-    folder = 'RAG/parsed_file'
+    folder = 'DeepSearchAcademic/parsed_file'
     folder_path = Path(folder)
     # 子文件夹的名称
     subfolders = [subfolder.name for subfolder in folder_path.iterdir() if subfolder.is_dir()]
@@ -563,7 +563,7 @@ if __name__ == "__main__":
         data.extend(records)
     
     df = pd.DataFrame(data)
-    df.to_csv("RAG/middel_data/12.13.csv", encoding="utf-8-sig", index=False)
+    df.to_csv("DeepSearchAcademic/middel_data/12.13.csv", encoding="utf-8-sig", index=False)
     
     print(df.info())
 
